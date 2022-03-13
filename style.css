@@ -208,6 +208,10 @@ header .icons a:hover{
   margin-bottom: 1rem;
 }
 
+.home .slide-container .slide .content p .mayusculas {
+  text-transform: uppercase;
+}
+
 /* .home .slide-container:nth-child(1) .slide{
   background:url(../images/home-bg-1.jpg) no-repeat;
   background-size: cover;
@@ -623,7 +627,7 @@ header .icons a:hover{
   color: var(--color-secundario);
 }
 
-.footer .box-container .credit span{
+.footer .box-container .credit span a{
   color:var(--color-texto);
   font-weight: 700;
   cursor: pointer;

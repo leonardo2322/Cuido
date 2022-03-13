@@ -347,6 +347,7 @@ header .icons a:hover{
   position: absolute;
   top: .5rem; left:-10rem;
   transition: all .3s ease;
+  z-index: 1000;
 }
 
 .products .box-container .box:hover .icons{

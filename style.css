@@ -75,7 +75,7 @@ section{
 header{
   position: fixed;
   top:0; left:0; right:0;
-  z-index: 1000;
+  z-index: 1200;
   background: var(--color-primario);
   padding:2rem 9%;
   display: flex;

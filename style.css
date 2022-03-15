@@ -13,7 +13,7 @@
 
   /* transformaciones */
 
-  --transformacion-btn: scale(1.2);
+  --transformacion-btn: scale(1.1);
 }
 
 *{
@@ -54,7 +54,7 @@ section{
   text-align: center;
   text-transform: uppercase;
   font-size: 4rem;
-  color: var(--color-texto);
+  color: var(--color-primario);
   padding: 1rem;
   margin-bottom: 2rem;
 }
@@ -68,7 +68,7 @@ section{
   display: inline-block;
   margin-top: 1rem;
   border-radius: 2rem;
-  border:.2rem solid var(--color-texto);
+  border: .1rem solid var(--color-secundario);
   font-weight: 700;
   font-size: 1.7rem;
   color:var(--black);
@@ -81,6 +81,7 @@ section{
   transform: var(--transformacion-btn);
   background:var(--color-primario);
   color:#000;
+  border: .1rem solid var(--color-primario);
 }
 
 header{
@@ -325,6 +326,7 @@ header .icons a:hover{
   display: flex;
   flex-wrap: wrap;
   gap:1.5rem;
+  background-color: #fff;
 }
 
 .products .box-container .box{
@@ -333,7 +335,7 @@ header .icons a:hover{
   text-align: center;
   position: relative;
   overflow: hidden;
-  background:#f9f9f9;
+  background:#fff;
   flex:1 1 40rem;
 }
 
@@ -414,8 +416,8 @@ header .icons a:hover{
   width: 5rem;
   line-height: 4.5rem;
   font-size: 2rem;
-  color:var(--color-texto);
-  border: .1rem solid var(--color-texto);
+  color:var(--color-secundario);
+  border: .1rem solid var(--color-secundario);
   border-radius: 50%;
   background:#fff;
   margin-top: .5rem;
@@ -461,7 +463,7 @@ header .icons a:hover{
   gap:1.5rem;
   border:.5rem solid rgba(0,0,0,.4);
   border-radius: 4rem;
-  background:#f9f9f9;
+  background:#fff;
   padding: 4rem;
   align-items: center;
   margin:1.5rem 0;
@@ -496,7 +498,7 @@ header .icons a:hover{
 } */
 
 .featured .row .image-container .small-image img:hover{
-  background:#ccc;
+  background:#fff;
 }
 
 .featured .row .image-container .big-image img{
@@ -520,14 +522,15 @@ header .icons a:hover{
 
 .featured .row .content p{
   font-size: 1.5rem;
-  color:#666;
+  color: var(--color-texto);
   padding:1rem 0;
-  letter-spacing: .1rem;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .featured .row .content .price{
   font-size: 2.5rem;
-  color:var(--black);
+  color:var(--color-texto);
   font-weight: bolder;
   margin-bottom: 5rem;
 }
@@ -556,7 +559,7 @@ header .icons a:hover{
   text-align: center;
   border:.1rem solid rgba(0,0,0,.1);
   border-radius: .5rem;
-  background:#f9f9f9;
+  background:#fff;
   padding:2rem;
 }
 
@@ -575,7 +578,8 @@ header .icons a:hover{
 
 .review .box-container .box p{
   font-size: 1.6rem;
-  color:#666;
+  color: var(--color-texto);
+  font-family: Arial, Helvetica, sans-serif;
   padding:1rem 0;
 }
 
@@ -593,18 +597,19 @@ header .icons a:hover{
   text-align: center;
   border:.5rem solid rgba(0,0,0,.4);
   border-radius: 4rem;
-  background: #f9f9f9;
+  background: #fff;
   padding:2rem;
 }
 
 .newsletter .content h3{
   font-size: 2.5rem;
-  color:var(--black);
+  color:var(--color-texto);
 }
 
 .newsletter .content p{
   font-size: 1.5rem;
-  color:#666;
+  color: var(--color-texto);
+  font-family: Arial, Helvetica, sans-serif;
   margin:1rem auto;
   max-width: 60rem;
 }
@@ -618,11 +623,12 @@ header .icons a:hover{
 .newsletter .content form .box{
   width:100%;
   font-size: 2rem;
+  font-family: monospace;
   text-transform: none;
   text-align: center;
-  color:#333;
+  color: var(--color-texto);
   padding:1rem;
-  border:.2rem solid var(--black);
+  border:.2rem solid var(--color-secundario);
   border-right: none;
   border-radius: 10px 0 0 10px;
   margin-top: 1rem;
@@ -638,7 +644,8 @@ header .icons a:hover{
 }
 
 .newsletter .content form .btn:hover{
-  border-radius: 10px;
+  border-radius: 3px;
+  border:.2rem solid var(--color-secundario);
 }
 
 .footer .box-container{
@@ -677,7 +684,8 @@ header .icons a:hover{
   width:100%;
   border-top: .4rem solid rgba(0,0,0,.4);
   font-size: 1.5rem;
-  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
   padding:1rem;
   padding-top: 2rem;
   color: var(--color-secundario);
@@ -687,6 +695,12 @@ header .icons a:hover{
   color:var(--color-texto);
   font-weight: 700;
   cursor: pointer;
+}
+
+.footer .box-container .credit .copy {
+  color: var(--color-texto);
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 
 .footer .box-container .credit span:hover{

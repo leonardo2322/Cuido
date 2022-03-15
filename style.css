@@ -35,6 +35,17 @@ html{
   font-weight: 700;
 }
 
+body::-webkit-scrollbar {
+  width: 7px;
+  background: var(--color-primario);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--color-secundario);
+  border-radius: 10px;
+  border: 1.5px solid #000000;
+}
+
 section{
   padding:2rem 9%;
 }
@@ -294,6 +305,7 @@ header .icons a:hover{
 .service .box-container .box h3:hover{
   transform: scale(1.3);
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .service .box-container .box h3{
@@ -322,8 +334,49 @@ header .icons a:hover{
   position: relative;
   overflow: hidden;
   background:#f9f9f9;
-  flex:1 1 30rem;
+  flex:1 1 40rem;
 }
+
+/* pruebas */
+
+/* .contenedor__span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+.prueba__btn {
+  cursor: pointer;
+  font-size: 3rem;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  border: 1px solid red;
+  padding: 1rem;
+  border-radius: 3rem;
+}
+
+.prueba__btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.ocultar {
+  display: none;
+}
+
+.mostrar {
+  display: block;
+} */
+
+.ocultar {
+  display: none;
+}
+
+/* fin pruebas */
 
 .products .box-container .box .content{
   padding:1.5rem;
@@ -336,16 +389,18 @@ header .icons a:hover{
 .products .box-container .box img{
   height: 30rem;
   filter:drop-shadow(0 .5rem 1rem rgba(0,0,0,.1));
-  margin: 6rem 2rem;
-  margin-bottom: -1rem;
+  margin: 6rem .5rem;
+  margin-top: 7rem;
+  margin-bottom: -.3rem;
   object-fit: cover;
+  border-radius: 5rem;
 }
 
 .products .box-container .box .icons{
   display: flex;
   flex-flow: column;
   position: absolute;
-  top: .5rem; left:-10rem;
+  top: 3rem; left:-10rem;
   transition: all .3s ease;
   z-index: 1000;
 }
@@ -732,7 +787,7 @@ header .icons a:hover{
 
   .products .box-container .box .icons a {
     margin-left: 2rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 
   .btn-movil-2 {

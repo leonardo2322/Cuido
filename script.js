@@ -46,3 +46,24 @@ document.querySelectorAll('.featured-image-3').forEach(image_3 =>{
     document.querySelector('.big-image-3').src = src;
   });
 });
+
+
+// ejemplo de prueba
+
+/* let mostrarTexto = document.getElementById('mostrarTexto');
+let textoOculto = document.getElementById('textoOculto');
+
+
+mostrarTexto.addEventListener('click', abrirTexto);
+
+function abrirTexto() {
+  textoOculto.classList.toggle('mostrar');
+
+  if (textoOculto.classList.contains('mostrar')) {
+    mostrarTexto.innerHTML = 'Mostrar Menos';
+  }
+
+  else {
+    mostrarTexto.innerHTML = 'Mostrar Más';
+  }
+} */

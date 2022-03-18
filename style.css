@@ -115,15 +115,21 @@ header .navbar a:hover{
   text-decoration: underline;
 }
 
-/* header .icons a{
+header .icons a{
   font-size: 2.5rem;
-  color:var(--black);
+  color:var(--color-texto);
   margin-left:1.5rem;
 }
 
 header .icons a:hover{
-  color:var(--orange);
-} */
+  color:var(--color-secundario);
+}
+
+header .form__buscador {
+  height: 7rem;
+  padding: 0 2rem;
+  display: none;
+}
 
 #menu-bar{
   font-size: 2.5rem;

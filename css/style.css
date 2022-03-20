@@ -118,17 +118,11 @@ header .navbar a:hover{
 header .icons a{
   font-size: 2.5rem;
   color:var(--color-texto);
-  margin-left:1.5rem;
+  margin-left: 1.2rem;
 }
 
 header .icons a:hover{
   color:var(--color-secundario);
-}
-
-header .form__buscador {
-  height: 7rem;
-  padding: 0 2rem;
-  display: none;
 }
 
 #menu-bar{
@@ -344,47 +338,6 @@ header .form__buscador {
   background:#fff;
   flex:1 1 40rem;
 }
-
-/* pruebas */
-
-/* .contenedor__span {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  font-size: 3rem;
-  margin-top: 2rem;
-}
-
-.prueba__btn {
-  cursor: pointer;
-  font-size: 3rem;
-  position: relative;
-  right: 0;
-  bottom: 0;
-  border: 1px solid red;
-  padding: 1rem;
-  border-radius: 3rem;
-}
-
-.prueba__btn:hover {
-  background-color: #000;
-  color: #fff;
-}
-
-.ocultar {
-  display: none;
-}
-
-.mostrar {
-  display: block;
-} */
-
-.ocultar {
-  display: none;
-}
-
-/* fin pruebas */
 
 .products .box-container .box .content{
   padding:1.5rem;
@@ -796,7 +749,7 @@ header .form__buscador {
   html{
     font-size: 50%;
   }
-
+  
   .home .slide-container .slide .image{
     padding-bottom: 6rem;
   }

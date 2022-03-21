@@ -684,6 +684,35 @@ header .icons a:hover{
   text-decoration: underline;
 }
 
+/* formulario carrito */
+
+.cont{
+  margin-top: 15rem;
+  width: 50%;
+
+}
+.cont input{
+  display: block;
+  border-bottom: 2px solid var(--color-primario);
+  margin: 4rem 4rem;
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(218, 40, 177,.3);
+}
+
+.cont .linke{
+  display: flex;
+  width: 20rem;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  background-color: var(--color-primario);
+  color: #090;
+  padding: 5px;
+}
+
+/* fin formulario carrito */
 
 
 
@@ -766,6 +795,10 @@ header .icons a:hover{
 
   html{
     font-size: 50%;
+  }
+
+  header .logo {
+    font-size: 2.4rem;
   }
   
   .home .slide-container .slide .image{

@@ -67,3 +67,4 @@ function abrirTexto() {
     mostrarTexto.innerHTML = 'Mostrar Más';
   }
 } */
+

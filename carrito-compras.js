@@ -3,11 +3,7 @@
 let añadirCarrito = document.querySelector('.products');
 
 // Funciones
-cargarProductos();
-
-function cargarProductos(){
-    añadirCarrito.addEventListener('click', addProductos);
-}
+añadirCarrito.addEventListener('click', addProductos);
 
 function addProductos(e){
     e.preventDefault();
@@ -20,7 +16,7 @@ function addProductos(e){
 
 function recuperarContenido(products) {
     const infoProductos = {
-        Image: products.querySelector('.box img').src,
+        Image: products.querySelector('.box img').attr('src'),
         title: products.querySelector('.content h3').textContent,
         price: products.querySelector('.price').textContent,
         id: products.querySelector('.content a').getAttribute('data-id'),

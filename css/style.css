@@ -116,7 +116,7 @@ header .navbar a:hover{
 }
 
 header .icons a{
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   color:var(--color-texto);
   margin-left: 1.2rem;
 }
@@ -277,7 +277,7 @@ header .icons a:hover{
 .home #prev:hover,
 .home #next:hover{
   color: var(--color-texto);
-  background:var(--color-primario);
+  background:var(--color-secundario);
   transform: scale(1.1);
   border-radius: 50%;
 }

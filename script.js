@@ -46,3 +46,6 @@ document.querySelectorAll('.featured-image-3').forEach(image_3 =>{
     document.querySelector('.big-image-3').src = src;
   });
 });
+
+//esta es la parte del selector para escribir dentro del carrito de compra
+

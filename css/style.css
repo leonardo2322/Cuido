@@ -84,6 +84,15 @@ section{
   border: .1rem solid var(--color-primario);
 }
 
+.btn-siguiente {
+  display: grid;
+  place-items: center;
+  width: 15rem;
+  height: 5rem;
+  margin-top: 3rem;
+  margin-left: 118rem;
+}
+
 header{
   position: fixed;
   top:0; left:0; right:0;
@@ -720,9 +729,20 @@ header .icons a:hover{
 
 /* fin formulario carrito */
 
+/* ir arriba */
 
-
-
+.ir-arriba {
+  display: inline-block;
+  padding:  2.5rem;
+  background-color: var(--color-primario);
+  font-size: 2.3rem;
+  color:  var(--color-secundario);
+  cursor:  pointer;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  border-radius: 50%;
+}
 
 
 
@@ -805,6 +825,14 @@ header .icons a:hover{
 
   header .logo {
     font-size: 2.4rem;
+  }
+
+  .btn-siguiente {
+    margin-left: 45rem;
+  }
+
+  .btn-atras {
+    margin-bottom: 2rem;
   }
   
   .home .slide-container .slide .image{

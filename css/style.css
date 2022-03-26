@@ -825,6 +825,10 @@ header .icons a:hover{
     top: 50%;
   }
 
+  .btn-siguiente {
+    margin-left: 95rem;
+  }
+
 }
 
 @media (max-width: 576px){
@@ -883,7 +887,11 @@ header .icons a:hover{
 }
 
 @media (max-width: 300px){
+  html, body {
+    overflow-x: hidden;
+  }
+
   .btn-siguiente {
-    margin-left: 20rem;
+    margin-left: 30rem;
   }
 }

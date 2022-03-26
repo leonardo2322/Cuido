@@ -11,6 +11,35 @@ window.onscroll = () => {
   navbar.classList.remove('active');
 }
 
+
+// boton de ir arriba
+
+document.getElementById('ir-arriba').addEventListener('click', botonArriba);
+
+function botonArriba() {
+  var currentScroll = document.documentElement.scrollTop;
+  if (currentScroll > 0) {
+    window.scrollTo (0, 0);
+  }
+}
+
+buttonUp = document.getElementById('ir-arriba');
+
+window.onscroll = function() {
+  var scroll = document.documentElement.scrollTop;
+
+  if (scroll > 200) {
+    buttonUp.style.transform = "scale(1)";
+  }
+  else if (scroll < 200){
+    buttonUp.style.transform = "scale(0)";
+  }
+}
+
+// fin del boton arriba
+
+
+
 let slides = document.querySelectorAll('.slide-container');
 let index = 0;
 
@@ -45,22 +74,4 @@ document.querySelectorAll('.featured-image-3').forEach(image_3 => {
     var src = image_3.getAttribute('src');
     document.querySelector('.big-image-3').src = src;
   });
-});
-
-// boton ir arriba 
-
-$(document).ready(function () {
-    $('.ir-arriba').click(function(){
-      $('body, html').animate({
-        scrollTop: '0px'
-      }, 300);
-
-      $(window).scroll(function(){
-        if ( $(this).scrollTop() > 0  ) {
-            $('.ir-arriba').slideDown(300);
-        } else {
-          $('.ir-arriba').slideUp(300);
-        }
-      });
-    });
 });

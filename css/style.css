@@ -737,8 +737,9 @@ header .icons a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #ccc;
   color: var(--color-secundario);
-  border: 3px solid transparent;
+  border: 1px solid transparent;
   border-radius: 50%;
   font-size: 20px;
   position: fixed;
@@ -764,6 +765,12 @@ header .icons a:hover{
 
 
 /* media queries  */
+
+@media (max-width:1024px) {
+  .btn-siguiente {
+    margin-left: 95rem;
+  }
+}
 
 @media (max-width:991px){
 
@@ -892,6 +899,6 @@ header .icons a:hover{
   }
 
   .btn-siguiente {
-    margin-left: 30rem;
+    margin-left: 25rem;
   }
 }

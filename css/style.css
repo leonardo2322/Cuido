@@ -85,10 +85,6 @@ section{
 }
 
 .btn-siguiente {
-  display: grid;
-  place-items: center;
-  width: 15rem;
-  height: 5rem;
   margin-top: 3rem;
 }
 
@@ -901,10 +897,6 @@ header .icons a:hover{
   .home #prev,
   .home #next{
     top: 70%;
-  }
-
-  .btn-siguiente {
-    margin-left: -118rem;
   }
 
 }

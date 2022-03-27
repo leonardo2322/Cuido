@@ -792,12 +792,6 @@ header .icons a:hover{
 
 /* media queries  */
 
-@media (max-width:1024px) {
-  .btn-siguiente {
-    margin-left: 95rem;
-  }
-}
-
 @media (max-width:991px){
 
   html{
@@ -858,10 +852,6 @@ header .icons a:hover{
     top: 50%;
   }
 
-  .btn-siguiente {
-    margin-left: 95rem;
-  }
-
 }
 
 @media (max-width: 576px){
@@ -872,10 +862,6 @@ header .icons a:hover{
 
   header .logo {
     font-size: 2.4rem;
-  }
-
-  .btn-siguiente {
-    margin-left: 40rem;
   }
 
   .btn-atras {
@@ -917,11 +903,4 @@ header .icons a:hover{
     top: 70%;
   }
 
-}
-
-@media (max-width: 300px){
-
-  .btn-siguiente {
-    margin-left: 15rem;
-  }
 }

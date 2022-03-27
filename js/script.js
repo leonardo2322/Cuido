@@ -2,6 +2,19 @@
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 
+/* declaracion de la funcion del boton de ir arriba */
+
+document.getElementById('ir-arriba').addEventListener('click', botonArriba);
+
+function botonArriba() {
+  var currentScroll = document.documentElement.scrollTop;
+  if (currentScroll > 0) {
+    window.scrollTo (0, 0);
+  }
+}
+
+buttonUp = document.getElementById('ir-arriba');
+    /* funcion de la barra de navegacion */
 menu.onclick = () =>{
   menu.classList.toggle('fa-times');
   navbar.classList.toggle('active');
@@ -10,6 +23,17 @@ menu.onclick = () =>{
 window.onscroll = () =>{
   menu.classList.remove('fa-times');
   navbar.classList.remove('active');
+
+  /* funcion del boton de ir arriba */
+
+  var scroll = document.documentElement.scrollTop;
+
+  if (scroll > 200) {
+    buttonUp.style.transform = "scale(1)";
+  }
+  else if (scroll < 200){
+    buttonUp.style.transform = "scale(0)";
+  }
 }
 
 let slides = document.querySelectorAll('.slide-container');

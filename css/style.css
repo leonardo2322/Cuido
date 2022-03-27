@@ -108,7 +108,7 @@ header{
 header .logo{
   padding: .1rem 0;
   font-size: 3rem;
-  color:var(--color-secundario);
+  color:var(--color-texto);
   font-weight: 600;
   letter-spacing: .1rem;
 }
@@ -755,6 +755,32 @@ header .icons a:hover{
   border-color: var(--color-secundario);
 }
 
+/* politicas de privacidad */
+
+.politicas {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 1rem 3rem;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(232, 226, 226);
+}
+
+.politicas h1 {
+  font-size: 3.5rem;
+  margin: 2rem 0;
+}
+
+.politicas h5 a {
+  color: var(--color-texto);
+  cursor: none;
+}
+
+/* fin de las politicas */
 
 
 
@@ -894,11 +920,8 @@ header .icons a:hover{
 }
 
 @media (max-width: 300px){
-  html, body {
-    overflow-x: hidden;
-  }
 
   .btn-siguiente {
-    margin-left: 25rem;
+    margin-left: 15rem;
   }
 }

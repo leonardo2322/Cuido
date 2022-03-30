@@ -154,7 +154,7 @@ header .icons a:hover{
   flex-wrap: wrap;
   gap:1.5rem;
   padding:0 9%;
-  padding-top: 9rem;
+  padding-top: 3rem;
 }
 
 .home .slide-container .slide .content{
@@ -585,7 +585,7 @@ header .icons a:hover{
   border:.5rem solid rgba(0,0,0,.4);
   border-radius: 4rem;
   background: #fff;
-  padding:2rem;
+  padding: 1rem;
 }
 
 .newsletter .content h1{
@@ -597,11 +597,29 @@ header .icons a:hover{
   color:var(--color-texto);
 }
 
-.newsletter .content iframe {
-  margin: 2rem 2rem;
+.newsletter .content .direccion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.newsletter .content .direccion iframe {
+  margin: 2rem 7rem;
   width: 450px;
   height: 380px;
   border-radius: 1rem;
+}
+
+.newsletter .content .direccion img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 2rem;
+ /*  width: 650px;
+  height: 380px; */
+  border-radius: 1rem;
+  object-fit: cover;
+
 }
 
 /* .newsletter .content p{
@@ -733,6 +751,70 @@ header .icons a:hover{
   padding: 5px;
 }
 
+/* segunda seccion */
+
+.cont{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 15rem;
+  width: 50%;
+
+}
+.cont input{
+  display: block;
+  border-bottom: 2px solid var(--color-primario);
+  margin: 4rem 4rem;
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(218, 40, 177,.3);
+}
+.cont .btn-pr{
+  display: flex;
+  cursor: pointer;
+  width: 17rem;
+  text-align: center;
+  height: 4rem;
+  font-weight: 700;
+  margin: 5rem;
+  font-size: 1.7rem;
+  background-color: var(--color-primario);
+  color: #090;
+  padding: 5px;
+}
+
+.cont .linke{
+  display: none;
+  cursor: pointer;
+  width: 17rem;
+  height: 4rem;
+  text-align: center;
+  margin: 5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  background-color: var(--color-primario);
+  color: #090;
+  padding: 5px;
+}
+
+.container-sale .div-agg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 3rem;
+}
+
+.container-sale .div-agg img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.cont .mostrarBtn{
+  display: block;
+}
+
+
 /* fin formulario carrito */
 
 /* ir arriba */
@@ -801,6 +883,23 @@ header .icons a:hover{
 
 @media (max-width:991px){
 
+  .newsletter .content .direccion {
+    grid-template-columns: 1fr;
+  }
+  
+  .newsletter .content .direccion iframe {
+    width: 90%;
+    height: 90%;
+  }
+
+  .newsletter .content .direccion img {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+@media (max-width:991px){
+
   html{
     font-size: 55%;
   }
@@ -859,9 +958,20 @@ header .icons a:hover{
     top: 50%;
   }
 
-  .newsletter .content iframe {
-    margin:  0rem;
-    width: 100%;
+  .newsletter .content .direccion iframe {
+    width: 90%;
+    height: 90%;
+    margin: 1rem 4rem;
+    margin-bottom: 5rem;
+  }
+
+  .newsletter .content .direccion {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter .content .direccion img {
+    margin: 0 auto;
+    width: 90%;
     height: 100%;
   }
 
@@ -921,8 +1031,24 @@ header .icons a:hover{
     margin-top: 3rem;
   }
 
-  .newsletter .content iframe {
+  .newsletter .content {
+    height: 68rem;
+  }
+
+  .newsletter .content .direccion {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter .content .direccion iframe {
     margin:  0rem;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .newsletter .content .direccion img {
+    margin:  0rem;
+    margin-top: 3rem;
     width: 100%;
     height: 100%;
   }

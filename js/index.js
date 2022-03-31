@@ -51,7 +51,7 @@ var image = maped.map(function (mape) {
             if (typeof(mape)!='number') {
                 const row = document.createElement('div')
                 const inputs= document.createElement('input')
-                inputs.setAttribute('placeholder','introduce cantidad libra o kilos')
+                inputs.setAttribute('placeholder','introduce cant / KL o LBS ')
            
 
 

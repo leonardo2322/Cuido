@@ -832,11 +832,13 @@ header .icons a:hover{
   text-align: center;
   justify-content: center;
   align-items: center;
-  font-size: 1.7rem;
+  font-size: 2rem;
+  font-weight: 700;
   background-color: var(--color-primario);
   color: var(--color-secundario);
   padding: 5px;
   border-radius: 2rem;
+  vertical-align: middle;
 }
 
 .form__container .container-sale .div-agg {
@@ -1130,12 +1132,14 @@ header .icons a:hover{
 
   .form__container .cont .linke {
     margin-bottom: 3rem;
+    padding-top: 2.5rem;
   }
 
   .form__container .cont .btn-pr,
   .form__container .cont .linke {
     height: 100%;
     width: 140%;
+    font-size: 2.4rem;
   }
 
 }

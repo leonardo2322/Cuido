@@ -408,7 +408,7 @@ header .icons a:hover{
   left:1rem;
 }
 
-.products .box-container .box .icons a{
+.products .box-container .box .icons span{
   height: 5rem;
   width: 5rem;
   line-height: 4.5rem;
@@ -422,7 +422,7 @@ header .icons a:hover{
   cursor: pointer;
 }
 
-.products .box-container .box .icons a:hover{
+.products .box-container .box .icons span:hover{
   background:var(--color-primario);
   color: var(--color-texto);
 }
@@ -1051,7 +1051,7 @@ header .icons a:hover{
     margin-top: 10rem;
   }
 
-  .products .box-container .box .icons a {
+  .products .box-container .box .icons span {
     margin-left: 2rem;
     margin-top: 1rem;
   }

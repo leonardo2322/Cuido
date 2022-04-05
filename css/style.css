@@ -54,6 +54,7 @@ section{
   font-size: 4rem;
   color: var(--color-secundario);
   padding: .5rem;
+  margin-top: -10rem;
   margin-bottom: 1rem;
 }
 
@@ -937,6 +938,85 @@ header .icons a:hover{
 
 /* fin de las politicas */
 
+/* popou carrito */
+.collapse {
+  position: absolute;
+  width: 50%;
+  top: 100%;
+  right: 0%;
+  background-color: rgb(101, 208, 210);
+}
+
+.collapse .carrito .table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 0rem 0rem 3rem 0rem;
+}
+
+
+.collapse .carrito .table th {
+  padding: 2rem;
+  text-align: center;
+}
+
+.collapse .carrito a {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+header .car {
+  font-size: 2.3rem;
+  cursor: pointer;
+  
+}
+
+header .car:hover {
+  font-size: 3rem;
+  color: #1f687a;
+}
+.carrito{
+  display: none;
+}
+
+.popup {
+  display: block;
+
+}
+
+.closed{
+  display: none;
+}
+.closedActive{
+  display: block;
+  font-size: 2rem;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.closedActive:hover{
+  color: rgb(133, 35, 35);
+  transform: rotate(90deg);
+}
+
+li {
+  list-style: none;
+}
+
+span .volver-atras {
+  display: inline-block;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
+/* fin del popup */
+
 
 
 
@@ -1154,6 +1234,10 @@ header .icons a:hover{
     height: 100%;
     width: 140%;
     font-size: 2.4rem;
+  }
+
+  span .volver-atras {
+    margin-top: 16%;
   }
 
 }

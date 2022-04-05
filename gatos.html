@@ -30,25 +30,52 @@
 
         <nav class="navbar">
             <a href="index.html">Inicio</a>
-            <a href="#products">productos</a>
-            <a href="#featured">M&aacute;s Productos</a>
-            <a href="#contact">Contacto</a>
+            <a href="index.html">productos</a>
+            <a href="index.html">M&aacute;s Productos</a>
+            <a href="index.html">Contacto</a>
         </nav>
 
+
         <div class="icons">
-            <a href="carrito-compras.html" class="fas fa-shopping-cart"></a>
+            <!-- <a href="#" class="fas fa-heart"></a> -->
+            <i class="car fas fa-shopping-cart"></i>
+            <i class="closed fas fa-times"></i>
+            <!-- <a href="#" class="fas fa-search"></a> -->
+        </div>
+
+        <div class="collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    
+                    <div id="carrito" class="carrito dropdown-menu" aria-labelledby="navbarCollapse">
+                        <table id="lista-carrito" class="table">
+                            <thead >
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody ></tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="btn btn-block">Vaciar Carrito</a>
+                        <a href="#" id="procesar-pedido" class="btn btn-block cyan">Procesar Compra</a>
+                    </div>
+                </li>
+            </ul>
         </div>
 
     </header>
 
     <!-- header section ends -->
 
+    <span>
+        <a href="/index.html" class="btn volver-atras">Volver Atras</a>
+    </span>
 
     <section class="products perros" id="products">
 
-        <span>
-            <a href="index.html" class="btn">Volver Atras</a>
-        </span>
 
         <h1 class="heading" id="Ringo"> productos para - <span>gatos</span> </h1>
 
@@ -745,8 +772,8 @@
                 <div class="content">
                     <img loading="lazy" src="./optimizadas-gatos/IMG-20220316-WA0272.jpg" alt="comida para gatos">
                     <h3>Monello Cat - Castrados/h3>
-                    <div class="price"> <span>21,400 cop</span> </div>
-                    <a href="" data-id="58" class="btn btn-add-producto">Agregar al Carrito</a>
+                        <div class="price"> <span>21,400 cop</span> </div>
+                        <a href="" data-id="58" class="btn btn-add-producto">Agregar al Carrito</a>
                 </div>
             </div>
 
@@ -1058,7 +1085,7 @@
                 </div>
                 <div class="content">
                     <img loading="lazy" src="./optimizadas-gatos/00706460029307.1.webp" alt="comida para gatos">
-                    <h3>Whiskas - Sabor Pollo y  Leche 1.5k </h3>
+                    <h3>Whiskas - Sabor Pollo y Leche 1.5k </h3>
                     <div class="price"> <span>-----</span> </div>
                     <a href="" data-id="282" class="btn btn-add-producto">Agregar al Carrito</a>
                 </div>
@@ -1134,8 +1161,7 @@
                     <span class="fas fa-eye"></span>
                 </div>
                 <div class="content">
-                    <img loading="lazy" src="./optimizadas-gatos/science.jpg"
-                        alt="comida para gatos">
+                    <img loading="lazy" src="./optimizadas-gatos/science.jpg" alt="comida para gatos">
                     <h3>Max</h3>
                     <div class="price"> <span>------</span> </div>
                     <a href="" data-id="292" class="btn btn-add-producto">Agregar al Carrito</a>
@@ -1171,8 +1197,11 @@
 
 
     <!-- custom js file link  -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/script.js" defer></script>
-    <script src="./js/addtoshopping.js" defer></script>
+    <script src="./js/carrito-compras.js"></script>
+    <script src="./js/pedido.js"></script>
+    <script src="./js/popup.js"></script>
     <!-- <script src="carrito-compras.js"></script> -->
 
 

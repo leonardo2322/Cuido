@@ -29,14 +29,41 @@
         <a href="index.html" class="logo">El Cuido a La Mano</a>
 
         <nav class="navbar">
-            <a href="index.html">Inicio</a>
+            <a href="#home">Inicio</a>
             <a href="#products">productos</a>
             <a href="#featured">M&aacute;s Productos</a>
             <a href="#contact">Contacto</a>
         </nav>
 
+
         <div class="icons">
-            <a href="carrito-compras.html" class="fas fa-shopping-cart"></a>
+            <!-- <a href="#" class="fas fa-heart"></a> -->
+            <i class="car fas fa-shopping-cart"></i>
+            <i class="closed fas fa-times"></i>
+            <!-- <a href="#" class="fas fa-search"></a> -->
+        </div>
+
+        <div class="collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    
+                    <div id="carrito" class="carrito dropdown-menu" aria-labelledby="navbarCollapse">
+                        <table id="lista-carrito" class="table">
+                            <thead >
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody ></tbody>
+                        </table>
+                        <a href="#" id="vaciar-carrito" class="btn btn-block">Vaciar Carrito</a>
+                        <a href="#" id="procesar-pedido" class="btn btn-block cyan">Procesar Compra</a>
+                    </div>
+                </li>
+            </ul>
         </div>
 
     </header>
@@ -625,8 +652,11 @@
 
 
     <!-- custom js file link  -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/script.js" defer></script>
-    <script src="./js/addtoshopping.js" defer></script>
+    <script src="./js/carrito-compras.js"></script>
+    <script src="./js/pedido.js"></script>
+    <script src="./js/popup.js"></script>
     <!-- <script src="carrito-compras.js"></script> -->
 
 

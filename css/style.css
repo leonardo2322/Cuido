@@ -919,45 +919,57 @@ header .icons a:hover{
 /* popou carrito */
 .collapse {
   position: absolute;
+  display: grid;
+  place-items: center;
   width: 50%;
   top: 100%;
   right: 0%;
-  background-color: rgb(101, 208, 210);
+  background-color: var(--color-primario);
+  border-radius: 0 0 0 2rem;
 }
 
-.collapse .carrito .table {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  margin: 0rem 0rem 3rem 0rem;
+.collapse .table .head__popup {
+  font-size: 2.7rem;
 }
 
+.collapse .table .head__popup .head__title {
+  border-bottom: 2px solid #000;
+  margin: 2rem 0;
+}
 
-.collapse .carrito .table th {
+/* .collapse .table tbody {
+  padding: 2rem;
+} */
+
+
+.collapse .carrito .table th{
   padding: 2rem;
   text-align: center;
+  margin: 2rem 0rem;
 }
 
-.collapse .carrito a {
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
+.collapse .carrito .btn__vaciar,
+.collapse .carrito .btn__procesar {
+  display: grid;
+  place-items: center;
+  border-radius: 2rem;
+  padding: .7rem;
+  font-size: 2rem;
+  margin: 2rem 0;
+  background-color: #000;
+  color: #fff;
 }
 
 header .car {
-  font-size: 2.3rem;
+  font-size: 2.6rem;
   cursor: pointer;
-  
 }
 
 header .car:hover {
-  font-size: 3rem;
-  color: #1f687a;
+  transform: scale(1.1);
+  color: var(--color-secundario);
 }
+
 .carrito{
   display: none;
 }
@@ -970,16 +982,18 @@ header .car:hover {
 .closed{
   display: none;
 }
+
 .closedActive{
   display: block;
-  font-size: 2rem;
+  margin-top: -1rem;
+  font-size: 3rem;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
   cursor: pointer;
 }
 
 .closedActive:hover{
-  color: rgb(133, 35, 35);
+  color: var(--color-secundario);
   transform: rotate(90deg);
 }
 
@@ -1221,6 +1235,10 @@ span .volver-atras {
 
   span .volver-atras {
     margin-top: 20%;
+  }
+
+  .collapse {
+    width: 100%;
   }
 
 }

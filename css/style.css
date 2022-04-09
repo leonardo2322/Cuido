@@ -917,36 +917,97 @@ header .icons a:hover{
 /* fin de las politicas */
 
 /* popou carrito */
+
+
+
 .collapse {
   position: absolute;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
-  top: 100%;
-  right: 0%;
+  height: 50%;
+  margin-top: 8rem;
+  top: -500px;
+  right: 0;
+  z-index: 1600;
   background-color: var(--color-primario);
   border-radius: 0 0 0 2rem;
+  overflow: hidden;
+  overflow-y: scroll;
+  
+}
+
+.collapse .table {
+  margin: 2rem;
 }
 
 .collapse .table .head__popup {
-  font-size: 2.7rem;
+  font-size: 3rem;
 }
 
-.collapse .table .head__popup .head__title {
-  border-bottom: 2px solid #000;
-  margin: 2rem 0;
-}
+.collapse .table .head__popup th {
+  color: #666;
+  margin: 0rem 2rem;
+  padding: 4rem;
+  border-radius: 3rem;
+}/* 
 
-/* .collapse .table tbody {
-  padding: 2rem;
+.collapse .carrito .table .trCar .imgCar {
+  border: 1px solid red;
+  object-fit: cover;
+  border-radius: 2rem;
+} */
+/* 
+.collapse .carrito .table .trCar .tituloCar {
+  font-size: 2rem;
+  margin-left: -3rem;
 } */
 
+/* .collapse .table .trCar {
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  grid-template-columns: repeat(4 1fr);
+  padding: 2rem;
+  border: 1px solid rebeccapurple;
+}
+
+.collapse .table .trCar .imgCar,
+.collapse .table .trCar .tituloCar ,
+.collapse .table .trCar .precioCar {
+  display: grid;
+  place-items: center;
+  margin: 1rem 2rem;
+}
+
+.collapse .table .trCar .imgCar {
+  width: 7rem;
+  height: 7rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-right: 2rem;
+}
+
+.collapse .table .trCar .tituloCar {
+  font-size: 2.3rem;
+  margin-right: 2rem;
+}
+
+.collapse .table .trCar .precioCar {
+  font-size: 2rem;
+}
+
+.collapse .table .trCar .borrar-producto {
+  font-size: 3rem;
+  margin-left: 3rem;
+}
 
 .collapse .carrito .table th{
   padding: 2rem;
   text-align: center;
   margin: 2rem 0rem;
-}
+} */
 
 .collapse .carrito .btn__vaciar,
 .collapse .carrito .btn__procesar {
@@ -975,7 +1036,7 @@ header .car:hover {
 }
 
 .popup {
-  display: block;
+  top: 0;
 
 }
 
@@ -1239,6 +1300,16 @@ span .volver-atras {
 
   .collapse {
     width: 100%;
+    padding: 2rem 2rem;
+    background-color: transparent;
+  }
+
+  .collapse .table {
+    width: 20%;
+  }
+
+  .popup {
+    background-color: var(--color-primario);
   }
 
 }

@@ -32,7 +32,7 @@ class Carrito {
             Swal.fire({
                 icon: 'info',
                 title: 'Oops...',
-                text: 'El producto ya est� agregado',
+                text: 'El producto ya esta agregado',
                 showConfirmButton: false,
                 timer: 1000
             })
@@ -43,15 +43,15 @@ class Carrito {
     }
     insertarCarrito(producto){
         const row = document.createElement('tr');
-        row.classList.add('trCar')
+        /* row.classList.add('trCar') */
         row.innerHTML = `
             <td>
-                <img class="imgCar" src="${producto.imagen}" width=100>
+                <img class="imgCar" src="${producto.imagen}" width=40 height=50>
             </td>
-            <td class="tituloCar" >${producto.titulo}</td>
-            <td class="precioCar" >S${producto.precio} cop</td>
+            <td class="tituloCar" style="font-size: 2rem" >${producto.titulo}</td>
+            <td class="precioCar" style="font-size: 2rem" >S${producto.precio} cop</td>
             <td>
-                <a href="#" class="borrar-producto fas fa-times-circle" data-id="${producto.id}"></a>
+                <a href="#" style="font-size: 3rem" class="borrar-producto fas fa-times-circle" data-id="${producto.id}"></a>
             </td>
         `;
         listaProductos.appendChild(row);
@@ -129,7 +129,9 @@ class Carrito {
                 Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
-                    text: 'El carrito est� vac�o, agrega alg�n producto',
+                    width: '40%',
+                    padding: '3rem',
+                    text: 'El carrito esta vacio, agrega algun producto',
                     showConfirmButton: false,
                     timer: 2000
                 })

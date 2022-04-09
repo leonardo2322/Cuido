@@ -2,7 +2,6 @@ const navItems = document.querySelector('#carrito')
 const btnactivate = document.querySelector('.car')
 const x = document.querySelector('.closed')
 
-
 btnactivate.addEventListener('click',()=>{
     navItems.classList.add('popup')
     btnactivate.classList.remove('fa-shopping-cart')

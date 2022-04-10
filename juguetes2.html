@@ -43,30 +43,33 @@
             <!-- <a href="#" class="fas fa-search"></a> -->
         </div>
 
-        <div class="collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                    
-                    <div id="carrito" class="carrito dropdown-menu" aria-labelledby="navbarCollapse">
-                        <table id="lista-carrito" class="table">
-                            <thead >
-                                <tr>
-                                    <th>Imagen</th>
-                                    <th>Nombre</th>
-                                    <th>Precio</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody ></tbody>
-                        </table>
-                        <a href="#" id="vaciar-carrito" class="btn btn-block">Vaciar Carrito</a>
-                        <a href="#" id="procesar-pedido" class="btn btn-block cyan">Procesar Compra</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
+ 
 
     </header>
+
+    <div class="collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+
+                <div id="carrito" class="carrito dropdown-menu" aria-labelledby="navbarCollapse">
+                    <table id="lista-carrito" class="table">
+                        <thead class="head__popup">
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <!-- <th></th> -->
+                            </tr>
+                        </thead>
+                        <tbody class="trCar">
+                        </tbody>
+                    </table>
+                    <a href="#" id="vaciar-carrito" class="btn__vaciar">Vaciar Carrito</a>
+                    <a href="#" id="procesar-pedido" class="btn__procesar">Procesar Compra</a>
+                </div>
+            </li>
+        </ul>
+    </div>
 
     <!-- header section ends -->
 

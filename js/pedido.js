@@ -4,7 +4,7 @@ let productos = document.querySelector('.products');
 const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
 let eliminar= document.querySelector('#carrito')
 const procesarPedidoBtn = document.getElementById('procesar-pedido');
-
+console.log(listaProductos,eliminar)
 
 cargarEventos();
 // document.addEventListener('click',(e)=>{
